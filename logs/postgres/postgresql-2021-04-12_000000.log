@@ -1,0 +1,33 @@
+2021-04-12 03:07:12.879 UTC [2125] LOG:  invalid length of startup packet
+2021-04-12 03:07:13.062 UTC [2127] LOG:  invalid length of startup packet
+2021-04-12 03:07:13.244 UTC [2128] FATAL:  unsupported frontend protocol 65363.19778: server supports 2.0 to 3.0
+2021-04-12 03:13:20.924 UTC [2141] LOG:  incomplete startup packet
+2021-04-12 03:13:21.030 UTC [2142] LOG:  invalid length of startup packet
+2021-04-12 03:13:21.212 UTC [2143] LOG:  invalid length of startup packet
+2021-04-12 03:13:21.397 UTC [2144] LOG:  invalid length of startup packet
+2021-04-12 03:13:21.580 UTC [2145] LOG:  invalid length of startup packet
+2021-04-12 03:13:21.763 UTC [2146] LOG:  invalid length of startup packet
+2021-04-12 03:13:21.945 UTC [2147] LOG:  invalid length of startup packet
+2021-04-12 03:13:22.128 UTC [2148] LOG:  invalid length of startup packet
+2021-04-12 03:13:22.311 UTC [2149] LOG:  invalid length of startup packet
+2021-04-12 03:13:22.493 UTC [2150] LOG:  invalid length of startup packet
+2021-04-12 03:13:22.676 UTC [2151] LOG:  invalid length of startup packet
+2021-04-12 03:13:22.859 UTC [2152] LOG:  invalid length of startup packet
+2021-04-12 03:13:23.042 UTC [2153] LOG:  invalid length of startup packet
+2021-04-12 03:13:23.224 UTC [2154] LOG:  invalid length of startup packet
+2021-04-12 03:13:23.410 UTC [2155] LOG:  invalid length of startup packet
+2021-04-12 03:13:23.597 UTC [2156] LOG:  invalid length of startup packet
+2021-04-12 03:13:23.784 UTC [2157] LOG:  invalid length of startup packet
+2021-04-12 03:13:23.977 UTC [2158] LOG:  invalid length of startup packet
+2021-04-12 03:13:24.159 UTC [2159] LOG:  invalid length of startup packet
+2021-04-12 03:13:24.343 UTC [2160] LOG:  invalid length of startup packet
+2021-04-12 03:13:24.526 UTC [2161] LOG:  invalid length of startup packet
+2021-04-12 03:13:24.708 UTC [2162] LOG:  invalid length of startup packet
+2021-04-12 03:13:24.890 UTC [2163] LOG:  invalid length of startup packet
+2021-04-12 03:13:25.072 UTC [2164] LOG:  invalid length of startup packet
+2021-04-12 03:13:25.254 UTC [2165] LOG:  invalid length of startup packet
+2021-04-12 03:13:25.437 UTC [2166] LOG:  invalid length of startup packet
+2021-04-12 03:13:25.621 UTC [2167] LOG:  invalid length of startup packet
+2021-04-12 03:13:25.804 UTC [2168] LOG:  invalid length of startup packet
+2021-04-12 03:13:25.987 UTC [2169] LOG:  incomplete startup packet
+2021-04-12 05:48:40.518 UTC [2485] FATAL:  expected password response, got message type 0

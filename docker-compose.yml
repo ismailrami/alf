@@ -58,7 +58,8 @@ services:
         volumes: 
             - ./data/alf-repo-data:/usr/local/tomcat/alf_data
             - ./logs/alfresco:/usr/local/tomcat/logs   
-        
+        expose:
+            - 8009
 
     alfresco-pdf-renderer:
         image: alfresco/alfresco-pdf-renderer:${TRANSFORM_ENGINE_TAG}
@@ -117,7 +118,8 @@ services:
                 "
         volumes: 
             - ./logs/share:/usr/local/tomcat/logs  
-    
+        expose:
+            - 8009
     
     postgres:
         image: postgres:${POSTGRES_TAG}
@@ -181,28 +183,29 @@ services:
         depends_on:
             - alfresco
             - share
-
-    # HTTP proxy to provide HTTP Default port access to services
-    # SOLR API and SOLR Web Console are protected to avoid unauthenticated access
+        expose :
+            - 8009
     proxy:
-        image: angelborroy/acs-proxy:1.0.0
-        mem_limit: 128m
-        environment:
-            - PORT=80
-        depends_on:
+       build:
+          context: ./httpd
+       depends_on:
             - alfresco
             - solr6
             - share
             - content-app
-        volumes:
-            - ./config/nginx.htpasswd:/etc/nginx/conf.d/nginx.htpasswd 
-        ports:
-            - 80:80
 
-    
-
-    
-
-    
-
-    
+       ports:
+           - 80:80
+    keycloak:
+       depends_on: 
+           - postgres
+       environment:
+           DB_VENDOR: postgres
+           DB_ADDR: postgres 
+           DB_DATABASE: alfresco
+           DB_USER: alfresco
+           DB_PASSWORD: alfresco
+       image: jboss/keycloak
+       ports:
+           - 8080:8080
+       restart: always

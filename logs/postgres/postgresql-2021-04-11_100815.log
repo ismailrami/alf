@@ -1,0 +1,11 @@
+2021-04-11 10:08:15.371 UTC [26] LOG:  database system was shut down at 2021-04-11 09:57:51 UTC
+2021-04-11 10:08:16.005 UTC [1] LOG:  database system is ready to accept connections
+2021-04-11 12:28:36.944 UTC [328] FATAL:  password authentication failed for user "keycloak"
+2021-04-11 12:28:36.944 UTC [328] DETAIL:  Role "keycloak" does not exist.
+	Connection matched pg_hba.conf line 95: "host all all all md5"
+2021-04-11 13:09:17.687 UTC [419] FATAL:  expected password response, got message type 0
+2021-04-11 16:46:06.206 UTC [865] LOG:  incomplete startup packet
+2021-04-11 17:49:20.596 UTC [993] FATAL:  unsupported frontend protocol 0.0: server supports 2.0 to 3.0
+2021-04-11 17:49:20.817 UTC [994] FATAL:  unsupported frontend protocol 255.255: server supports 2.0 to 3.0
+2021-04-11 17:49:21.316 UTC [995] FATAL:  no PostgreSQL user name specified in startup packet
+2021-04-11 18:38:44.540 UTC [1096] LOG:  incomplete startup packet
