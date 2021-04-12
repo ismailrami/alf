@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt-get update &&  apt-get install -y --no-install-recommends apache2 libapache2-mod-jk 
+RUN apt-get update &&  apt-get install -y --no-install-recommends apache2 libapache2-mod-jk libapache2-mod-auth-openidc
 
 ADD conf/apache2/apache2.conf /etc/apache2/apache2.conf
 
